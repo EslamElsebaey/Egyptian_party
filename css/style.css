@@ -1,0 +1,204 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* home section  */
+.home{
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    z-index: 2;
+}
+.home::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+    content: "";
+    z-index: -1;
+}
+.home-desc h1{
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.home-desc p{
+    font-size: 20px;
+    color: #ffffff;
+}
+.nav-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 100%;
+    z-index: 99;
+    color: #ffffff;
+    display: flex;
+    transition: transform ease 1s;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-box{
+   padding: 30px;
+    width: 65%;
+    position: fixed;
+    height: 100%;
+    background-color: #414658;
+    position: relative;
+}
+.exe{
+    font-size: 25px;
+    top: 35px;
+    right: 31px;
+}
+.link , .exe{
+    color: #ffffff;
+    transition: all ease .3s;
+}
+.main-box .exe:hover , .list li .link:hover {
+    color: rgba(214, 46, 51, 0.4);
+}
+.nav-box h3  , .exe , .singers h3{
+    cursor: pointer;
+}
+
+.slide{
+transform: translateX(-247px);
+}
+/* ***************************************************************************************************************** */
+
+/* details section  */
+.singers{
+    padding: 80px 0;
+}
+
+.singers h3{
+    background-color: #E68285;
+    padding: 8px 0;
+}
+.singers p {
+    background-color: #CCCCCC;
+    padding: 8px;
+}
+.allsingers{
+    width: 60%;
+}
+
+
+/* ***************************************************************************************************************** */
+
+
+
+/*  duration section  */
+
+
+.join{
+    background-image: url(../images/join\ us.jpg);
+    background-position: center center ;
+    background-size: 100% 100%;
+    padding: 50px 0;
+    z-index: 2;
+    margin: 50px 0;
+}
+.join::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+    z-index: -1;
+}
+.item{
+    border: 1px solid #ffffff;
+   height: 180px;
+   margin-bottom: 20px;
+
+}
+
+/* ***************************************************************************************************************** */
+
+
+
+/*  contact section  */
+.contact{
+    padding: 50px 0;
+}
+.contact-info h2 , .contact-info h5{
+    color: #444444;
+}
+.contact-info li , .contact-info p {
+    color: #777777;
+}
+.brands li {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #777777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color .3s ease ;
+}
+.brands li i {
+    font-size: 20px;
+}
+.brands li:hover{
+    background-color: #D62E33;
+    border-color: #D62E33;
+}
+.brands li:hover i{
+    color: #ffffff;
+}
+textarea{
+    height: 200px;
+}
+
+.send{
+     background-color: #D62E33;
+    padding: 10px 20px;
+    border: #D62E33 1px solid;
+    font-size: 14px;
+}
+.remained span{
+color: #D62E33;
+font-size: 20px;
+font-weight: 500;
+display: inline-block;
+}
+.remained{
+    margin-bottom: 0;
+}
+
+/* ***************************************************************************************************************** */
+
+
+/* media  */
+
+@media screen and (max-width:992px) {
+    .join{
+        background-image: none;
+    }
+     .allsingers{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-box h3{
+        position: fixed;
+        top: 20px ;
+        left: 260px;
+    }
+    .home-desc h1{
+        font-size: 40px;
+    }
+}
